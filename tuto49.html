@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur rem amet dolore? Ea, perspiciatis? Delectus, repellat voluptas. Non, incidunt nostrum!</p>
+    </div>
+    <script>
+        var string = 'This';
+        var name = "Varma";
+        var channel = 'Learn to Code';
+        var message = "Varma is a good boy";
+        var temp = `${name}'s God is "great" and he is a very good person and he is now doing ${channel}`;
+
+        // console.log(string + name + message);
+        //  console.log(string);
+        console.log(temp);
+
+        var len = name.length;
+        console.log(`Length of name is ${name}`)
+        // Note : IF there is a \n then it will move to thee new line. To escape we can use \\ before the n character 
+        // These ('\n, \t, \b', .....) are the escape sequences which are accepted by JavaScript 
+        console.log("Hello \\neveryone.\n Be ready to enter the field of Data Science");
+        console.log("Good \t Morning \b everyone");
+        // This is declaration of a string using String constructor and this is also a way to store a string in a variable
+        var a = new String("This")
+        // This is dynamically insert the data into the Html page by using JavaScript
+        document.getElementById('content').innerHTML = '<h3> This is a h3 heading </h3>'
+        // document.getElementById('content').innerHTML = '<h3> THis another h3 heading </h3>'
+        // document.getElementById('content ').innerHTML = '<h3> This is another heading for practice </h3>'
+    </script>
+</body>
+</html>

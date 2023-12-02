@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, and conditional statements in JavaScript</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        // var string1 = "This is a string 1";
+        // var string2 = "This is a string 2";
+        // console.log(string1);
+        // let a ="u"   // This 'a' is a global variable
+        // {
+        //     let a = "u6";
+        //     console.log(a)  // This 'a' is a block scope variable
+        // }
+        // console.log(a)  // It prints the global 'a' variable
+
+        // const a = "This cannot be changed";  // Now this 'a' variable cannot be changed 
+        // console.log(a);
+        let age = 34;
+        if(age>18)
+        {
+            console.log("You have the right to vote");
+        }
+        else if(age==18)
+        {
+            console.log("You are about to become a teenaager");
+        }
+        else if(age==12)
+        {
+            console.log("You are still a child");
+        }
+        else
+        {
+            console.log("You are not eligible");
+        }
+        const cups = 45;
+        switch(cups)
+        {
+            case 45:
+                console.log("You have 45 cups");
+                break;
+            case 41:
+                console.log("You have 41 cups");
+                break;
+            case 42:
+                console.log("You have 42 cups");
+                break;
+            case 43:
+                console.log("You have 43 cups");
+                break;
+            case 44:
+                console.log("You have 44 cups");
+                break;  
+            default:
+                console.log("The value of cups is none");
+                break;          
+
+        }
+    </script>
+</body>
+</html>

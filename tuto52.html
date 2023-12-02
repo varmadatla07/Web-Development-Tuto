@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Simple si html</div>
+    <script>
+        let myVar = 34;
+        let myVar2 = null;
+        let myVar3 = undefined;
+        let myvar4 = true;
+        let myVar5 = "String";
+        let employee = {
+            name: "Varma",
+            salary: 10,
+            profession: "Student",
+            channel: "Code with Varma",
+            "channel 2": "Programming with Varma"
+        }
+        console.log(employee);
+
+        console.log(employee.profession)
+        console.log(employee['profession']);
+
+       // console.log(employee.channel 2); // If our key name has spaces then this access is not available
+        console.log(emplyee['channel 2']); // Then we can access that key value pair using indexing of the object
+
+        let names = [1,2,4,"Varma",undefined]; // This is an array 
+        console.log(names[0]);
+
+        let name = new Array(1,2,3,"Varma", undefined);
+        console.log(name);
+
+        console.log(names.length);
+        names = names.sort()
+        names.push("This is pushed");
+        console.log(names);
+
+        let arr = new Array(23); // This is used to set the present size of the array
+        console.log(arr.length)
+        arr.push("This is pushed to this array")
+        console.log(arr);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+extends base.pug 
+
+block scripts  
+    script(src="/static/index.js")
+
+block style 
+       style 
+         include ../static/style.css
+
+block content
+    //- nav#navbar.top  
+        //- ul
+        //-   div#logo
+        //-    img(src="/static/images/img1.png");
+        //-    | DA 
+        //-   li #[a(href = "/") Home ] 
+        //-   li #[a(href = "/") About ]  
+        //-   li #[a(href="/") services ] 
+        //-   li #[a(href="/") Class info  ]
+        //-   li #[a(href = "/") Conatact us ] 
+   section#introSection 
+        div Welcome to Dance Academy 
+        div.small  Learn to Dance
+
+   section#missionSection 
+        h2 Our Mission  
+        div.card
+          h3 Dance Perfection
+          div.card-box 
+            div.card-img
+              img(src="")
+            div.card-content
+              p THis a dance academy !!!!!
+        div.card
+          h3 Dance the way you like
+          div.card-box 
+            div.card-img
+              img(src="")
+            div.card-content
+              p THis a dance academy !!!!!
+
+
+        div.card
+          h3 Expertise Teaching
+          div.card-box 
+            div.card-img
+              img(src="")
+            div.card-content
+              p THis a dance academy !!!!!
+
+
+   section#sponsorSection 
+        h2  Our Sponsors 
+        div#sponsors
+          img(src="/static/images.img1" , alt = "Sponsor Image", class="spImage")
+          img(src="/static/images.img1" , alt = "Sponsor Image", class="spImage")
+          img(src="/static/images.img1" , alt = "Sponsor Image", class="spImage")
+          img(src="/static/images.img1" , alt = "Sponsor Image", class="spImage")
+                

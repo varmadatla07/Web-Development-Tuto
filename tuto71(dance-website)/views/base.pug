@@ -1,0 +1,22 @@
+html 
+   head  
+     title My Site - #{title}
+     block scripts 
+     block style    
+
+   body 
+    nav#navbar.top  
+        ul
+          div#logo
+           img(src="/static/images/img1.png");
+           | DA 
+          li #[a(href = "/") Home ] 
+          li #[a(href = "/") About ]  
+          li #[a(href="/") services ] 
+          li #[a(href="/") Class info  ]
+          li #[a(href = "/") Conatact us ] 
+          
+    block content 
+    footer#footer 
+        | Copyright © 2023 Varma's_channel.com | All Rights Reserved
+       

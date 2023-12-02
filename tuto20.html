@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Ubuntu' sans-serif ;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid purple;
+            margin: 33px auto;  /* if you need any element towards center then margin:auto which automtically sets the y and x position towards center*/
+            background-color:rgb(250, 225, 238);
+            
+        }
+
+        .item{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(248, 245, 245);
+            
+        }
+        #fruit{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: left;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */ 
+            clear: both;  /* it is stop the overlapping of the boxes . it states upper stationary box there should be no overlap */
+            /* clear: right;  */
+            /* clear: left; */
+            width: 100%; 
+        }
+        p , h3{
+            /* text-align: left; */
+            /* text-align: right; */
+            /* text-align: center; */
+            text-align: justify;   /* text-align is used to used set alignment of the text */
+        }
+        h1{
+            margin: 23px auto;
+            width: 455px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>  Welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus esse corrupti. Possimus asperiores facere nostrum totam repellendus quos, eveniet eos deserunt consequatur inventore perferendis sequi nobis rem facilis labore iure in.</p>
+        </div>
+
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus esse corrupti. Possimus asperiores facere nostrum totam repellendus quos, eveniet eos deserunt consequatur inventore perferendis sequi nobis rem facilis labore iure in.</p>
+        </div>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus esse corrupti. Possimus asperiores facere nostrum totam repellendus quos, eveniet eos deserunt consequatur inventore perferendis sequi nobis rem facilis labore iure in.</p>
+        </div>
+
+        <div id="glasses" class="item">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est minus esse corrupti. Possimus asperiores facere nostrum totam repellendus quos, eveniet eos deserunt consequatur inventore perferendis sequi nobis rem facilis labore iure in.</p>
+        </div>
+    </div>
+</body>
+</html>

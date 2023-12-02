@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Tutorials</title>
+    <link rel="stylesheet" href="tuto13.css">
+    <style>
+        p{
+            color: rgb(221, 36, 221);
+            background-color:seagreen !important;  
+        } 
+    </style>  
+    <!-- So the first priority is given ti Inline CSS among other and Internal CSS and External CSS is taken by the position it is placed -->
+    <!--If we keep !important then irrespective of the position it will be given the priority-->
+    <!-- The css that is given last or after other css, it will be given the priority,here it will take External css instead of internal CSS -->
+<link rel="stylesheet" href="tuto13.css"> 
+</head>
+<body>
+    <h3>This is CSS Tutorials</h3>
+    <!-- When we give both Inline css and Internal css It gives priority to the Inline css only than Internal css  -->
+    <p style="color: red; background-color: yellow; "> This tutorial will teach you everything you need to learn about HTMl/CSS</p>
+     
+</body>
+</html>

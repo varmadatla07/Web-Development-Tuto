@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        /* Universal Selector  */
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: #e6cbf8;
+        }
+
+        .container{
+            background-color: rgb(231, 230, 241);
+            border: 3px solid rgb(64, 6, 119);
+
+
+            /* We can set padding and margin for top, bottom, left and right */
+         /* padding-bottom: 79px;
+            padding-top: 79px;
+            padding-right: 79px;
+            padding-left: 34px;*/
+
+
+            padding: 23px 56px 6px 78px;   /* padding  = top, right, bottom and left like this */ 
+            margin: 23px 56px 6px 78px;    /* margin = top right bottom left */
+
+             /* padding/margin : y(top/bottom) x(left/right) */
+             /* margin= y(top/bottom) x(left/right) */ 
+
+            padding: 34px 19px;  
+            margin: 14px 19px;     
+            border-radius: 23px;
+            width: 533px;
+            
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo est sed iure pariatur nemo inventore quos sint officiis maiores vitae rerum quis ducimus, quaerat eius labore at, quisquam illo in esse!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="second">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo est sed iure pariatur nemo inventore quos sint officiis maiores vitae rerum quis ducimus, quaerat eius labore at, quisquam illo in esse!</p>
+    </div>
+
+    <div class="container">
+        <h3>This is heading</h3>
+        <p id="third">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo est sed iure pariatur nemo inventore quos sint officiis maiores vitae rerum quis ducimus, quaerat eius labore at, quisquam illo in esse!</p>
+    </div>
+    
+</body>
+</html>
